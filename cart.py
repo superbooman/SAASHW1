@@ -21,7 +21,7 @@ def add_cart(user_id,product_id):
     if not quantity:
         return jsonify({"error": "Quantity not found"}), 404
     
-    response = request.post('http://127.0.0.1:5000/product_list/remove_quantity', json = quantityid)
+    response = request.post('https://cart-xzzo.onrender.com/product_list/remove_quantity', json = quantityid)
     
     current_cart_id = len(cart)+1
 
@@ -51,7 +51,7 @@ def remove_cart(user_id,product_id):
     if not quantity:
         return jsonify({"error": "Quantity not found"}), 404
     
-    response = request.post('http://127.0.0.1:5000/product_list/add_quantity', json = quantityid)
+    response = request.post('https://cart-xzzo.onrender.com/product_list/add_quantity', json = quantityid)
     
     current_cart_id = len(cart)+1
 
