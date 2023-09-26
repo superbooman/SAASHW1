@@ -52,7 +52,7 @@ def remove_quantity():
 
 #Endpoint 5: modify quantity value up
 @app.route('/product_list/add_quantity', methods=['POST'])
-def remove_quantity():
+def add_quantity():
     data = request.json
     quantity_add = data.get('quantity')
     id = data.get('product_id')

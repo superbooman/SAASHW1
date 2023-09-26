@@ -41,7 +41,7 @@ def add_cart(user_id,product_id):
     
 #Endpoint #3: Remove quantity from user cart
 @app.route('/cart/<int:user_id>/remove/<int:product_id>', methods = ['POST'])
-def add_cart(user_id,product_id):
+def remove_cart(user_id,product_id):
     
 
     data = request.json
